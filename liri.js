@@ -1,9 +1,10 @@
 const axios = require("axios");
 
+const moment = require("moment");
 require("dotenv").config();
-var Spotify = require("node-spotify-api");
+const Spotify = require("node-spotify-api");
 
-var keys = require("./keys.js");
+const keys = require("./keys.js");
 
 var spotify = new Spotify(keys.spotify);
 
@@ -24,12 +25,14 @@ switch (command){
             var concerts = response.data;
             concerts.forEach(function(concert){
                 name = concert.venue.name;
-                console.log(name);
-                location = concert.venue.city + ", " + concert.venue.region + " " + concert.venue.country;
-                console.log(location);
-                console.log(" ");
-            })
-            // console.log(response.data);
+               
+                location = concert.venue.city + ", " + concert.venue.region + "\n" + concert.venue.country;
+
+                date = concert.datetime.split("T")[0].toString();
+                date = moment(date).format("MM/DD/YYYY");
+               
+                console.log(date + "\n" + name + "\n" + location + "\n");
+            });
         });
 
 
