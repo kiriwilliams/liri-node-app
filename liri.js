@@ -101,13 +101,6 @@ function spotifySearch(song) {
        console.log(trackInfo);
     });
 
-    // spotify.request('https://api.spotify.com/v1/search?q=name:"'+song+'"&type=track')
-    //     .then(function(data){
-    //         console.log(data);
-    //     })
-    //     .catch(function(err){
-    //         console.error('Error occurred: ' + err);
-    //     })
 }
 
 //FUNCTION - CONCERT
