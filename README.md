@@ -31,7 +31,7 @@
  ```
  __Issues with Spotify:__ 
  1. The spotify api does not always return a preview url
- 2. Spotify's search algorithm is fuzzy and does not return exact matches; "The Sign" will return "Sign of the Times."
+ 2. Spotify's search algorithm is fuzzy and does not return exact matches; "The Sign" will return "Sign of the Times," or albums that have the search term in their name.
 
  ### movie-this
  Takes the name of a movie and returns title, year, IMDB rating, Rotten Tomatoes rating, country of production, language, plot, and actors.
