@@ -34,10 +34,22 @@
  2. Spotify's search algorithm is fuzzy and does not return exact matches; "The Sign" will return "Sign of the Times."
 
  ### movie-this
+ Takes the name of a movie and returns title, year, IMDB rating, Rotten Tomatoes rating, country of production, language, plot, and actors.
 ```
 node liri.js movie-this <movie>
 ```
  ### do-what-it-says
+ Reads the `random.txt` file and runs one of the above functions based on what is written in `random.txt`.
  ```
  node liri.js do-what-it-says
+ ```
+ `random.txt` contains
+ ```
+ spotify-this-song,"I Want it That Way"
+ ```
+ Expected output
+ ```
+ I Want It That Way
+Appears on The Hits--Chapter One by Backstreet Boys
+https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=eadefc76e2d049388c8e179b1e8f8d20
  ```
