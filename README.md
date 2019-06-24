@@ -2,6 +2,10 @@
 
  LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
+## Video Demo
+[![Video of Liri App running in the console](http://img.youtube.com/vi/dLznrIEZRxs/0.jpg)](http://www.youtube.com/watch?v=dLznrIEZRxs)
+
+
  ## Installation
 
  LIRI's dependencies can be installed from the included package.json. You will need to supply your own Spotify API keys in an .env file in the format below.
@@ -14,7 +18,7 @@
 
  ## Usage
 
- LIRI runs in the command line using node. There are four functions available.
+ LIRI runs in the command line using node. There are four functions available. All functions write their output into log.txt.
  
  ### concert-this
   Takes the name of an artist and returns upcoming concerts including date, venue, and location.
